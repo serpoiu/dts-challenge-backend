@@ -7,7 +7,7 @@ namespace dts_challenge_backend.Data
     {
         public CaseTask() { }
 
-        public CaseTask(int id, string title, string? description, TaskStatus status, DateTime dueDate) 
+        public CaseTask(int id, string title, string? description, TaskStatus status, DateOnly dueDate) 
         {
             Id = id;
             Title = title;
@@ -27,6 +27,6 @@ namespace dts_challenge_backend.Data
         public TaskStatus Status { get; set; }
 
         [Required]
-        public DateTime DueDate { get; set; }
+        public DateOnly DueDate { get; set; }
     }
 }
